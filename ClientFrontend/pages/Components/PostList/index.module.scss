@@ -1,0 +1,42 @@
+$primary:#01a001;
+
+.post_list {
+    margin: 2em 0px;
+
+    .title_area {
+        span {
+            display: inline-block;
+
+            h1 {
+                @media only screen and (max-width:380px) {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .seeMore {
+            cursor: pointer;
+            float: right;
+            right: 0px;
+
+            button {
+                border: none !important;
+                outline: none !important;
+                background: $primary;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 3px 10px;
+                box-sizing: border-box;
+                font-weight: bolder;
+
+                &:hover {
+                    transition: 0.5s ease all;
+                    background: #01a00194 !important;
+                    border-bottom: 3px solid #085b08;
+                }
+            }
+
+        }
+    }
+}

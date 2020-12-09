@@ -1,0 +1,18 @@
+#loader {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    svg {
+        width: 100px;
+        height: 100px;
+    }
+}

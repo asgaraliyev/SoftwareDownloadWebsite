@@ -1,0 +1,199 @@
+$gray:#f0f2f5;
+$primary:#01a001;
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px black;
+
+    p {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .icon {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .menu_icon {
+        display: none;
+
+        @media only screen and (max-width: 950px) {
+            display: flex;
+
+        }
+    }
+
+    .side {
+        width: 25%;
+
+        @media only screen and (max-width: 1250px) {
+            width: 33%;
+        }
+
+        @media only screen and (max-width: 950px) {
+            width: 50%;
+        }
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .right_side {
+
+        @extend .side;
+
+        @media only screen and (max-width: 450px) {
+            width: 60%;
+        }
+
+        .input_field {
+            width: 100%;
+            height: 70%;
+            margin: 10px;
+
+            position: relative;
+
+            .height_full {
+                height: 100%;
+                position: relative;
+                float: left;
+                outline: none !important;
+                border: none !important;
+            }
+
+            input {
+                padding: 10px;
+                background: transparent;
+                font-weight: 400;
+                font-size: medium;
+                width: 80%;
+                width: 100%;
+                background: $gray;
+                border-radius: 20px;
+                position: absolute;
+                @extend .height_full;
+
+                &:focus {
+                    transition: all 1s ease;
+                    background: white;
+                    box-shadow: 0px 0px 10px gray;
+
+
+                }
+            }
+
+            button {
+                cursor: pointer;
+                width: 50px;
+                @extend .height_full;
+                background: transparent;
+                float: right;
+
+            }
+        }
+    }
+
+    .left_side {
+        @extend .side;
+        justify-content: space-around;
+
+        @media only screen and (max-width: 450px) {
+            width: 40%;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 2em;
+            cursor: pointer;
+
+            &:hover {
+                transition: 1s ease all;
+                color: $primary;
+            }
+
+            @media only screen and (max-width: 450px) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .center_side {
+        @extend .side;
+
+
+        @media only screen and (max-width: 950px) {
+            display: none;
+
+        }
+
+        .menu {
+            width: 100%;
+            list-style: none;
+            float: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            padding: 0px !important;
+            margin: 0px !important;
+
+            li {
+                display: inline;
+                font-weight: bold;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                cursor: pointer;
+                padding: 0px 2em;
+
+                .expand {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                &:hover {
+                    transition: 0.5s ease all;
+                    background: $gray;
+                }
+
+                a {
+                    color: black !important;
+                }
+
+
+            }
+
+            .menu_active {
+                color: $primary;
+                border-bottom: 3px solid $primary;
+
+                a {
+                    color: $primary !important;
+
+                }
+            }
+
+
+
+
+        }
+    }
+
+}

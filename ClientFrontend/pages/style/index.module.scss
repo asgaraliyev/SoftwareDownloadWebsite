@@ -1,0 +1,90 @@
+$primary:#01a001;
+
+#main_area {
+    padding: 10px 2em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+
+
+    @media only screen and (max-width:795px) {
+        flex-direction: column;
+    }
+
+    #posts_area {
+        position: relative;
+        width: 70%;
+
+        @media only screen and (max-width: 1283px) {
+            width: 60%;
+        }
+
+        @media only screen and (max-width: 1115px) {
+            width: 60%;
+        }
+
+        @media only screen and (max-width: 977px) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width:795px) {
+            width: 100%;
+        }
+    }
+
+    #catagories_area {
+        width: 30%;
+        position: relative;
+
+        @media only screen and (max-width: 1283px) {
+            width: 40%;
+        }
+
+        @media only screen and (max-width: 1115px) {
+            width: 40%;
+        }
+
+        @media only screen and (max-width: 977px) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width:795px) {
+            width: 100%;
+        }
+
+
+    }
+}
+
+#breadcrumb {
+    display: flex;
+    margin: 1em 2em;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        float: left;
+
+        a {
+            color: $primary !important;
+        }
+
+        svg {
+            font-size: x-large;
+        }
+    }
+}
+
+#tabs_for_color {
+    .ant-tabs-tab-active {
+        color: $primary !important;
+
+        * {
+            color: $primary !important;
+        }
+    }
+}

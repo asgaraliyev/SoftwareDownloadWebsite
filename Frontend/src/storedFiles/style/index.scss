@@ -1,0 +1,63 @@
+#main {
+    width: 100%;
+    position: relative;
+
+    .catagories {
+        padding: 2em;
+        box-sizing: border-box;
+    }
+}
+
+#new-catagory {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+#posts {
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+#new-post {
+    width: 100%;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+#edit-post {
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 100vh;
+}
+
+#galery {
+    width: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 100vh;
+    padding: 3em;
+    box-sizing: border-box;
+    
+    .galery-image {
+        margin: 1em;
+
+    }
+}
