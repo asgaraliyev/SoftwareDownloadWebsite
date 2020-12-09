@@ -8,7 +8,6 @@ const Joi = require("joi");
 const cloudinary = require("cloudinary");
 const app = express();
 const port = 999;
-require("dotenv").config();
 
 mongoose.connect(
   `mongodb+srv://asgaraliyev:${process.env.DATABASE_PASSWORD}@cluster0.5rq88.mongodb.net/${process.env.DATABASE_NAME}?retryWrites=true&w=majority`,
