@@ -7,8 +7,7 @@ const cors = require("cors");
 const Joi = require("joi");
 const cloudinary = require("cloudinary");
 const app = express();
-const port = 999;
-
+const server = require('http').createServer();
 mongoose.connect(
   `mongodb+srv://asgaraliyev:${process.env.DATABASE_PASSWORD}@cluster0.5rq88.mongodb.net/${process.env.DATABASE_NAME}?retryWrites=true&w=majority`,
   {
@@ -446,7 +445,7 @@ app.post("/gallery", async (req, res) => {
 // SUBCATAGORY
 // SUBCATAGORY
 // SUBCATAGORY
-
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("app is running...");
 });
